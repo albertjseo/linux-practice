@@ -22,3 +22,30 @@ wc ls_orchid.fasta
 
 # Print how many lines there are in the file that contain genetic data (no headers)
 grep -c "[ATCG]" ls_orchid.fasta
+
+# Install package needed for alginedments
+sudo apt-get install clustalw
+
+#  run command clustalw
+clustalw
+
+# once prompted select 1 for Sequence Input from disk
+1
+
+# introduce the name of the file with FASTA
+your_fastafile.FASTA
+
+# select option for Multiple Alignments
+2
+
+# select 9 for Output format options and select 3
+9
+3
+
+# re-select option 1 to Do complete multiple alignment now (Slow/Accurate)
+1
+
+# three files will be generated:
+# extension dnd - contains the guide tree
+# extension aln - contains the alignement in ClustaW format
+# extension msf - alignedment in MSF format
