@@ -50,3 +50,11 @@ your_fastafile.FASTA
 # extension dnd - contains the guide tree
 # extension aln - contains the alignment in ClustaW format
 # extension msf - alignment in MSF format
+
+# after aligning, visualize the alignments using tooles like IGV, Aliview, alv, etc...
+# download IGV then...
+sudo apt-get install igv
+
+# run igv
+igv.sh
+
