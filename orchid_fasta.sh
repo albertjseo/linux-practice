@@ -23,7 +23,8 @@ wc ls_orchid.fasta
 # Print how many lines there are in the file that contain genetic data (no headers)
 grep -c "[ATCG]" ls_orchid.fasta
 
-# Install package needed for alginedments
+# Install package needed for alignments.
+# It is important to run sequence alignments because of identifying sequence similarities, phylogenetic trees, and developing homology models of protein structures
 sudo apt-get install clustalw
 
 #  run command clustalw
@@ -47,5 +48,5 @@ your_fastafile.FASTA
 
 # three files will be generated:
 # extension dnd - contains the guide tree
-# extension aln - contains the alignement in ClustaW format
-# extension msf - alignedment in MSF format
+# extension aln - contains the alignment in ClustaW format
+# extension msf - alignment in MSF format
